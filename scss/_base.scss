@@ -1,0 +1,67 @@
+// colors
+$white: #fff;
+$black: #000;
+$yellow: #ffa81e;
+$navy-blue: #294c5b;
+$dark-blue: #1c2731;
+$orange: #ff6800;
+$light-blue: #ebf1f3;
+$grey: #777777;
+$red: #ab1600;
+$green: #2c5b29;
+
+// base settings
+*,
+html {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* 5 Columns */
+.col-xs-5-cols,
+.col-sm-5-cols,
+.col-md-5-cols,
+.col-lg-5-cols {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5-cols {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+@media (min-width: 768px) {
+  .col-sm-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
